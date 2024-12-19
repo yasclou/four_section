@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Figtree", serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: 100;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 500;
+    width: 320px;
+    margin-top: 15px;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.5;
+}
+
+.cardgreen {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    width: 80%;
+    box-shadow: 3px 3px 15px hsl(165, 10%, 92%);
+}
+
+h4 {
+    padding: 20px 10px 5px 10px;
+    font-size: 24px;
+}
+
+p {
+    padding: 10px;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.5;
+}
+
+.cardgreen img {
+    float: right;
+    padding: 20px;
+}
+
+.cardred {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 5px solid hsl(0, 78%, 62%);
+    width: 80%;
+    box-shadow: 3px 3px 15px hsl(165, 10%, 92%);
+}
+
+.cardred img {
+    float: right;
+    padding: 20px;
+}
+
+.cardyellow {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 5px solid hsl(34, 97%, 64%);
+    width: 80%;
+    box-shadow: 3px 3px 15px hsl(165, 10%, 92%);
+}
+
+.cardyellow img {
+    float: right;
+    padding: 20px;
+}
+
+.cardblue {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 5px solid hsl(212, 86%, 64%);
+    width: 80%;
+    box-shadow: 3px 3px 15px hsl(165, 10%, 92%);
+    margin-bottom: 50px;
+}
+
+.cardblue img {
+    float: right;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 8px;
+    margin-bottom: 20%;
+}
+
+@media (min-width:376px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        width: 40%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        margin: 5px;
+    }
+
+    p {
+        margin: 5px;
+    }
+
+    .container {
+        width: 80%;
+        height: 40%;
+        gap: 30px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cardgreen {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: relative;
+        bottom: -100px;
+        width: 380px;
+        height: 211px;
+    }
+
+    .cardgreen img {
+        padding: 10px;
+    }
+
+    .cardred {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 380px;
+        height: 220px;
+    }
+
+    .cardred img {
+        padding: 0 10px 10px 0;
+    }
+
+    .cardyellow {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 380px;
+        height: 211px;
+        position: relative;
+        top: -100px;
+    }
+
+    .cardyellow img {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .cardblue {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        position: relative;
+        bottom: -130px;
+        width: 380px;
+    }
+
+    .cardblue img {
+        padding: 0 10px 10px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+}
